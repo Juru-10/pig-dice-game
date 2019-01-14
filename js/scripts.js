@@ -119,3 +119,15 @@ $(document).ready(function(){
       player2.winnerCheck();
     });
   });
+
+  $("#duo").click(function(event){
+    $("#options").hide();
+    $("#dices").show();
+    $("#back").show();
+    $("#back").click(function(){
+      $("#play").show();
+      $("#dices").hide();
+    });
+  });
+
+  
