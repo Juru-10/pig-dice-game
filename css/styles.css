@@ -39,7 +39,7 @@ h3, p, li {text-transform: uppercase;}
 .player2 {
   background-color: rgba(46, 204, 113, 0.1);
   float: right;
- }
+}
 #rslt1, #rslt2 {
   text-align: center;
   font-size: 80px;
