@@ -235,3 +235,4 @@ $(document).ready(function(){
     $("#options").show();
     $("#back").show();
   });
+});
