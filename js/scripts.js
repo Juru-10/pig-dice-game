@@ -155,6 +155,17 @@ $(document).ready(function(){
         $("#curr2").text(player2.current+secondPlayer2.current);
       });
     });
+
+    $("#holder2").click(function(event){
+      player2.hold();
+      secondPlayer2.hold();
+      $("#rslt2").text(player2.scores);
+      $("#curr2").empty();
+      $("#roller2").empty();
+      $("#secondRoller2").empty();
+      player2.winnerCheck();
+    });
+
   });
 
   $("#one").click(function(event){
@@ -194,6 +205,16 @@ $(document).ready(function(){
       secondPlayer1.roll1();
       $("#curr1").text(player1.current+secondPlayer1.current);
     });
+  });
+
+  $("#holder1").click(function(event){
+    player1.hold();
+    secondPlayer1.hold();
+    $("#rslt1").text(player1.scores);
+    $("#curr1").empty();
+    $("#roller1").empty();
+    $("#secondRoller1").empty();
+    player1.winnerCheck();
   });
 
   $("#newGame").click(function(event){
