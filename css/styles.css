@@ -8,3 +8,20 @@
 #rules, #img, .machine, #forTwoDices1, #forTwoDices2 {
 display: none;
 }
+body {
+	background: linear-gradient(to right, #AAFABD, #C9AABA);
+  font-family: serif;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #222;
+}
+
+h3, p, li {text-transform: uppercase;}
+
+#game {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
