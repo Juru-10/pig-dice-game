@@ -171,6 +171,7 @@ $(document).ready(function(){
   $("#one").click(function(event){
     $("#dices").hide();
     $("#game").show();
+    $("#newGame").show();
     $("#back").show();
     $("#back").click(function(){
       $("#start").show();
@@ -187,6 +188,7 @@ $(document).ready(function(){
   $("#two").click(function(event){
     $("#dices").hide();
     $("#game").show();
+    $("#newGame").show();
     $("#forTwoDices1").show();
     $("#forTwoDices2").show();
     $("#back").show();
