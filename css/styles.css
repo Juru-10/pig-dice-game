@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+#newGame, #dices, #options, #game, #winner, #back,
+#rules, #img, .machine, #forTwoDices1, #forTwoDices2 {
+display: none;
+}
