@@ -33,7 +33,7 @@ h3, p, li {text-transform: uppercase;}
 }
 
 .player1 {
-  background-color: rgba(255, 175, 189, 0.1);
+  background-color: rgba(255, 175, 255, 0.1);
   float: left;
 }
 .player2 {
@@ -42,7 +42,7 @@ h3, p, li {text-transform: uppercase;}
 }
 #rslt1, #rslt2 {
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 100;
   margin-bottom: 130px;
 }
@@ -56,7 +56,7 @@ h3, p, li {text-transform: uppercase;}
 
 #roller1, #roller2, #secondRoller1, #secondRoller2 {
  	text-align: center;
-  font-size: 60px;
+  font-size: 40px;
 }
 #img{
   width: 10%;
@@ -93,7 +93,7 @@ h3, p, li {text-transform: uppercase;}
   font-size: 40px;
   color: #222;
 }
-
+.curr{color: black;}
 button {
   position: relative;
   width: 200px;
