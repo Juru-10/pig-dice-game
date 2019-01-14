@@ -47,3 +47,8 @@ $(document).ready(function(){
   $("#rule").click(function(event){
     $("#rules").toggle();
   });
+  $("button#play").click(function(event){
+    $("#rules").hide();
+    $("#start").hide();
+    $("#options").show();
+  });
