@@ -25,3 +25,18 @@ h3, p, li {text-transform: uppercase;}
   background-color: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
+.player1,.player2 {
+  width: 40%;
+  height: 70vh;
+  padding: 30px;
+  font-weight: 300;
+}
+
+.player1 {
+  background-color: rgba(255, 175, 189, 0.1);
+  float: left;
+}
+.player2 {
+  background-color: rgba(46, 204, 113, 0.1);
+  float: right;
+ }
