@@ -221,6 +221,7 @@ $(document).ready(function(){
 
   $("#newGame").click(function(event){
     $("#game").hide();
+    $("#options").show();
     clearValues();
     player1.newGame();
     player2.newGame();
