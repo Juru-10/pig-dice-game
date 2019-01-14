@@ -44,3 +44,6 @@ Roll.prototype.newGame=function(){
 
 
 $(document).ready(function(){
+  $("#rule").click(function(event){
+    $("#rules").toggle();
+  });
