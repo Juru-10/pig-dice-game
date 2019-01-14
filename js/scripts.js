@@ -52,3 +52,70 @@ $(document).ready(function(){
     $("#start").hide();
     $("#options").show();
   });
+
+  player1=new Roll(true);
+  player2=new Roll(false);
+  secondPlayer1=new Roll(true);
+  secondPlayer2=new Roll(false);
+
+  $("#solo").click(function(event){
+    $("#options").hide();
+    $(".machine").show();
+
+    $("#easy").click(function(event){
+      $(".machine").hide();
+      $("#dices").show();
+      $("#back").show();
+      $("#back").click(function(){
+        $("#options").show();
+        $("#dices").hide();
+      });
+    });
+
+    $("#hard").click(function(event){
+      $(".machine").hide();
+      $("#dices").show();
+      $("#back").show();
+      $("#back").click(function(){
+        $("#options").show();
+        $("#dices").hide();
+      });
+    });
+
+    $("#one").click(function(){
+      $("#player2").trigger(function(event){
+        player2.roll=toss();
+        $("#img").show(function(event){
+
+        });
+        $("#roller2").text(player2.roll);
+        player2.roll1();
+        $("#curr2").text(player2.current);
+      });
+    });
+
+    $("#two").click(function(event){
+      $("#player2").trigger(function(event){
+        player2.roll=toss();
+        secondPlayer2.roll=toss();
+        $("#img").show(function(event){
+          $(parseInt("img id"))=toss;
+        });
+        $("#roller2").text(player2.roll);
+        $("secondRoller2").text(secondPlayer2.roll);
+        player2.roll1();
+        secondPlayer2.roll1();
+        $("#curr2").text(player2.current+secondPlayer2.current);
+      });
+    });
+
+    $("#holder2").click(function(event){
+      player2.hold();
+      secondPlayer2.hold();
+      $("#rslt2").text(player2.scores);
+      $("#curr2").empty();
+      $("#roller2").empty();
+      $("#secondRoller2").empty();
+      player2.winnerCheck();
+    });
+  });
