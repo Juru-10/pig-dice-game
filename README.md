@@ -9,7 +9,7 @@ This Pig Dice Game is is played either by two players or just one payer(where th
 * your browser can read Javascript and jquery, html, css and md files.
 * and have the
 *link to it.[https://github.com/Juru-10/pig-dice-game.git]* on github.
-*and the link to it[https://Juru-10.io.git......] on GitHub Pages*
+*and the link to it[https://Juru-10.github.io/pig-dice-game] on GitHub Pages*
 * You can access its all content.
 ## Known Bugs
 This game may not be as playable as you need, but It is still in Development and that will be soon resolved.
