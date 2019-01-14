@@ -128,6 +128,35 @@ $(document).ready(function(){
       $("#play").show();
       $("#dices").hide();
     });
+
+    $("#one").click(function(event){
+      $("#player2").click(function(event){
+        player2.roll=toss();
+        $("#img").show(function(event){
+          $(parseInt("img id"))=toss;
+        });
+        $("#roller2").text(player2.roll);
+        player2.roll1();
+        $("#curr2").text(player2.current);
+      });
+    });
+
+    $("#two").click(function(event){
+      $("#player2").click(function(event){
+        player2.roll=toss();
+        secondPlayer2.roll=toss();
+        $("#img").show(function(event){
+          $(parseInt("img id"))=toss;
+        });
+        $("#roller2").text(player2.roll);
+        $("secondRoller2").text(secondPlayer2.roll);
+        player2.roll1();
+        secondPlayer2.roll1();
+        $("#curr2").text(player2.current+secondPlayer2.current);
+      });
+    });
   });
+
+
 
   
