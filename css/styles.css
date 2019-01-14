@@ -40,3 +40,22 @@ h3, p, li {text-transform: uppercase;}
   background-color: rgba(46, 204, 113, 0.1);
   float: right;
  }
+ #rslt1, #rslt2 {
+     text-align: center;
+     font-size: 80px;
+     font-weight: 100;
+     margin-bottom: 130px;
+ }
+
+ #rslt1{
+   color: #EB4D4D;
+ }
+ #rslt2 {
+     color: #2ecc71;
+ }
+
+ #roller1, #roller2, #secondRoller1, #secondRoller2 {
+ 	text-align: center;
+
+   font-size: 60px;
+ }
