@@ -30,7 +30,7 @@ Roll.prototype.hold=function(){
   alert(this.playerName + ", your turn is over, pass the mouse!");
 }
 Roll.prototype.winnerCheck=function(){
-  if(this.current>=100){
+  if(this.scores>=100){
     alert("You are the winner!");
     $("#winner").show();
   }
@@ -99,7 +99,7 @@ $(document).ready(function(){
         player2.roll=toss();
         secondPlayer2.roll=toss();
         $("#img").show(function(event){
-          $(parseInt("img id"))=toss;
+
         });
         $("#roller2").text(player2.roll);
         $("secondRoller2").text(secondPlayer2.roll);
@@ -112,7 +112,7 @@ $(document).ready(function(){
     $("#holder2").trigger(function(event){
       player2.hold();
       secondPlayer2.hold();
-      $("#rslt2").text(player2.scores);
+      $("#rslt2").text(player2.scores+secondPlayer2.scores);
       $("#curr2").empty();
       $("#roller2").empty();
       $("#secondRoller2").empty();
@@ -149,7 +149,7 @@ $(document).ready(function(){
           $(parseInt("img id"))=toss;
         });
         $("#roller2").text(player2.roll);
-        $("secondRoller2").text(secondPlayer2.roll);
+        $("#secondRoller2").text(secondPlayer2.roll);
         player2.roll1();
         secondPlayer2.roll1();
         $("#curr2").text(player2.current+secondPlayer2.current);
@@ -159,7 +159,7 @@ $(document).ready(function(){
     $("#holder2").click(function(event){
       player2.hold();
       secondPlayer2.hold();
-      $("#rslt2").text(player2.scores);
+      $("#rslt2").text(player2.scores+secondPlayer2.scores);
       $("#curr2").empty();
       $("#roller2").empty();
       $("#secondRoller2").empty();
@@ -200,7 +200,6 @@ $(document).ready(function(){
     $("#player1").click(function(event){
       player1.roll=toss();
       secondPlayer1.roll=toss();
-      imgs1[1+player1.roll].show();
       $("#roller1").text(player1.roll);
       $("#secondRoller1").text(secondPlayer1.roll);
       player1.roll1();
@@ -212,7 +211,7 @@ $(document).ready(function(){
   $("#holder1").click(function(event){
     player1.hold();
     secondPlayer1.hold();
-    $("#rslt1").text(player1.scores);
+    $("#rslt1").text(player1.scores+secondPlayer1.scores);
     $("#curr1").empty();
     $("#roller1").empty();
     $("#secondRoller1").empty();
