@@ -40,51 +40,85 @@ h3, p, li {text-transform: uppercase;}
   background-color: rgba(46, 204, 113, 0.1);
   float: right;
  }
- #rslt1, #rslt2 {
-     text-align: center;
-     font-size: 80px;
-     font-weight: 100;
-     margin-bottom: 130px;
- }
+#rslt1, #rslt2 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  margin-bottom: 130px;
+}
 
- #rslt1{
-   color: #EB4D4D;
- }
- #rslt2 {
-     color: #2ecc71;
- }
+#rslt1{
+  color: #EB4D4D;
+}
+#rslt2 {
+  color: #2ecc71;
+}
 
- #roller1, #roller2, #secondRoller1, #secondRoller2 {
+#roller1, #roller2, #secondRoller1, #secondRoller2 {
  	text-align: center;
+  font-size: 60px;
+}
+#img{
+  width: 10%;
+  float: left;
+}
+#player1 h1::after {
+  content: "\2022";
+  font-size: 47px;
+  position: absolute;
+  color: #EB4D4D;
+  top: -7px;
+  right: 10px;
 
-   font-size: 60px;
- }
- #img{
-   width: 10%;
-   float: left;
- }
- #player1 h1::after {
-     content: "\2022";
-     font-size: 47px;
-     position: absolute;
-     color: #EB4D4D;
-     top: -7px;
-     right: 10px;
+}
 
- }
+.curr-box1, .curr-box2 {
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+.curr-box1{
+  float: right;
+  color: #fff;
+  background-color: #EB4D4D;
+}
+.curr-box2 {
+  float: left;
+  background-color: #2ecc71;
+  color: #fff;
+}
+#curr1, #curr2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #222;
+}
 
- .curr-box1, .curr-box2 {
-   width: 60%;
-   padding: 20px;
-   text-align: center;
- }
- .curr-box1{
-   float: right;
-   color: #fff;
-   background-color: #EB4D4D;
- }
- .curr-box2 {
-   float: left;
-     background-color: #2ecc71;
-     color: #fff;
- }
+button {
+  position: relative;
+  width: 200px;
+  color: #555;
+  background: none;
+  border: none;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover span { margin-right: 20px; }
+
+button:focus {outline: none;}
+
+i {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -4px;
+  transition: margin 0.3s;
+}
