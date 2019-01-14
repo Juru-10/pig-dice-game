@@ -109,7 +109,7 @@ $(document).ready(function(){
       });
     });
 
-    $("#holder2").click(function(event){
+    $("#holder2").trigger(function(event){
       player2.hold();
       secondPlayer2.hold();
       $("#rslt2").text(player2.scores);
@@ -157,6 +157,60 @@ $(document).ready(function(){
     });
   });
 
+  $("#one").click(function(event){
+    $("#dices").hide();
+    $("#game").show();
+    $("#back").show();
+    $("#back").click(function(){
+      $("#start").show();
+      $("#game").hide();
+    });
+    $("#player1").click(function(event){
+      player1.roll=toss();
+      $("#roller1").text(player1.roll);
+      player1.roll1();
+      $("#curr1").text(player1.current);
+    });
+  });
 
+  $("#two").click(function(event){
+    $("#dices").hide();
+    $("#game").show();
+    $("#forTwoDices1").show();
+    $("#forTwoDices2").show();
+    $("#back").show();
+    $("#back").click(function(){
+      $("#start").show();
+      $("#game").hide();
+    });
 
-  
+    $("#player1").click(function(event){
+      player1.roll=toss();
+      secondPlayer1.roll=toss();
+      imgs1[1+player1.roll].show();
+      $("#roller1").text(player1.roll);
+      $("#secondRoller1").text(secondPlayer1.roll);
+      player1.roll1();
+      secondPlayer1.roll1();
+      $("#curr1").text(player1.current+secondPlayer1.current);
+    });
+  });
+
+  $("#newGame").click(function(event){
+    $("#game").hide();
+    clearValues();
+    player1.newGame();
+    player2.newGame();
+    secondPlayer1.newGame();
+    secondPlayer2.newGame();
+    $("#curr1").empty();
+    $("#rslt1").empty();
+    $("#roller1").empty();
+    $("#secondRoller1").empty();
+    $("#curr2").empty();
+    $("#rslt2").empty();
+    $("#roller2").empty();
+    $("#secondRoller2").empty();
+    $("#options").show();
+    $("#back").show();
+  });
