@@ -40,3 +40,7 @@ Roll.prototype.newGame=function(){
   this.current=0;
   this.scores=0;
 }
+
+
+
+$(document).ready(function(){
